@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis" />
+<title>しょうけい館 戦傷病者史料館</title>
+<meta name="Keywords" content="しょうけい館, 戦傷病者, 戦後, 九段下, 証言, 図書, 歴史的資料, 保存, 展示, 承継" />
+<meta name="Description" content="しょうけい館は、戦傷病者とそのご家族等の戦中・戦後に体験したさまざまな労苦についての証言・歴史的資料・書籍・情報を収集、保存、展示し、後世代の人々にその労苦を知る機会を提供する国立の施設です。" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link href="css/stylet.css" rel="stylesheet" type="text/css" />
+<script src="js/bt_on.js" type="text/javascript"></script>
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript">
+$(function() {
+ function slideSwitch() {
+ var $active = $('#slideshow img.active');
+ var $next = $active.next().length ? $active.next() : null; // 最後はnull代入
+if ($next !== null) {
+ $active.addClass('last-active');
+ $next.css({opacity: 0.0})
+ .addClass('active').animate({opacity: 1.0}, 800, function() {
+ $active.removeClass('active last-active');
+ });
+ } else clearInterval(intervalID); // 停止
+}
+ 
+var intervalID = setInterval(slideSwitch, 2000); // 始動
+});
+ </script>
+
+
+<style type="text/css">
+<!--
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.style3 {
+	color: #FF0000;
+}
+-->
+</style>
+</head>
+
+<body onload="MM_preloadImages('img/menu_bt01_on.gif','img/menu_bt02_on.gif','img/menu_bt03_on.gif','img/menu_bt04_on.gif','img/menu_bt05_on.gif')">
+<!-- #page ページの整形：中央寄せ -->
+<div id="page">
+	<!-- #headerer 画面上部のヘッド部分 -->
+  <div id="header"><a name="top" id="top"></span></a>
+    <div id="ing"><a href="index.html"><img src="img/top_logo.gif" width="262" height="90" alt="しょうけい館" /></a></div>
+<div id="company_name">
+        <table width="570" border="0" cellpadding="0" cellspacing="0">
+
+          <tr>
+            <td colspan="3"><table width="570" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="200"><a href="sub_menu/hall.html"><img src="img/top_head_bt01.gif" width="200" height="27" alt="しょうけい館について" /></a></td>
+                <td width="10">&nbsp;</td>
+              <td width="360"><FORM method="GET" action="http://www.google.co.jp/search">
+                      <div align="left"><a href="http://www.google.co.jp/" tabindex="12"><img src="img/googl.gif" alt="Google" width="50" height="19"  class="google-parts" ></a>
+                        <INPUT type="text" name="q" size=31 maxlength=255 value="">
+                        <INPUT type="submit" name="btnG" value="サイト内検索">
+                        <INPUT type="hidden" name="hl" value="ja">
+                        <INPUT type="hidden" name="sitesearch" value="shokeikan.go.jp">
+                        <INPUT type="hidden" name="ie" value="Shift_JIS">
+                        <INPUT type="hidden" name="oe" value="Shift_JIS">
+                            </div>
+              </FORM> </td>
+              </tr>
+            </table>              
+              <div align="left"><a href="sub_menu/hall.html"></a></div></td>
+          </tr>
+          <tr>
+            <td colspan="3"><img src="img/top_annai.gif" width="500" height="20" alt="しょうけい館について" /></td>
+          </tr>
+          <tr>
+            <td width="267"><a href="pdf/raodmap.pdf" target="_blank"><img src="img/down_bt04.gif" width="255" height="20" alt="道順" /></a></td>
+            <td width="84"><div align="left"><a href="sub_menu/english_page.html"><img src="img/top_head_bt02.gif" alt="English" width="76" height="20" /></a></div></td>
+            <td width="219"><div align="left"><a href="sub_menu/sitemap.html"><img src="img/top_head_bt03.gif" alt="サイトマップ" width="105" height="20" /></a></div></td>
+          </tr>
+        </table>
+    </div>
+  </div>
+	<div id="menu">
+		<ul class="menu_f02"><li><img src="img/menu_bt_back.gif" alt="" width="13" height="42" /></li><li><a href="josetsu/josetsu_1f.html"><img src="img/menu_bt01.gif" alt="常設展" name="BT_MENU01" width="165" height="42" id="BT_MENU01" onmouseover="MM_swapImage('BT_MENU01','','img/menu_bt01_on.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li><img src="img/menu_bt_back.gif" alt="" width="12" height="42" /></li>
+        <li><a href="kikaku/kikaku.html"><img src="img/menu_bt02.gif" alt="企画展" name="BT_MENU02" width="165" height="42" id="BT_MENU02" onmouseover="MM_swapImage('BT_MENU02','','img/menu_bt02_on.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li><img src="img/menu_bt_back.gif" alt="" width="12" height="42" /></li>
+        <li><a href="library/riyou.html"><img src="img/menu_bt03.gif" alt="図書室" name="BT_MENU03" width="165" height="42" id="BT_MENU03" onmouseover="MM_swapImage('BT_MENU03','','img/menu_bt03_on.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li><img src="img/menu_bt_back.gif" alt="" width="12" height="42" /></li>
+        <li><a href="shougen/eizorental.html"><img src="img/menu_bt04.gif" alt="証言映像" name="BT_MENU04" width="165" height="42" id="BT_MENU04" onmouseover="MM_swapImage('BT_MENU04','','img/menu_bt04_on.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li><img src="img/menu_bt_back.gif" alt="" width="12" height="42" /></li><li><a href="sub_menu/annai.html"><img src="img/menu_bt05.gif" alt="利用案内" name="BT_MENU05" width="165" height="42" id="BT_MENU05" onmouseover="MM_swapImage('BT_MENU05','','img/menu_bt05_on.gif',1)" onmouseout="MM_swapImgRestore()" /></a></li>
+        <li><img src="img/menu_bt_back.gif" alt="" width="12" height="42" /></li>
+      </ul>
+  </div>
+		<!-- #main 本文スペース -->
+		<div id="menuR">
+			<!-- #menuR 右サイドメニュー -->
+			<div>
+			  <ul class="label">
+					<li><img src="img/contents_01.gif" width="271" height="26" alt="コンテンツ" /></li>
+                                                                        <li><a href="sub_menu/movie.html#movie"><img src="img/top_bannar04.jpg" alt="館紹介ムービー" width="271" height="69" class="bannar" /></a></li>
+                <li><a href="study/study_top.html" target="_blank"><img src="img/top_bannar01.jpg" alt="学校団体様用ページ" width="271" height="69" class="bannar" /></a></li>
+                <li class="bannar"><a href="shougen/eizorental.html#sample"><img src="img/top_bannar02.jpg" width="271" height="69" alt="証言映像" /></a></li>
+                <li class="bannar"><a href="letter/letter.html"><img src="img/top_bannar11.jpg" width="271" height="69" alt="館だより" /></a></li>
+			  </ul>
+			  <ul class="label">
+				<li><img src="img/contents_03.gif" width="271" height="26" alt="YouTube" /></li>    
+                <li><a href="http://www.youtube.com/shokeikan" target="_blank"><img src="img/top_bannar06.jpg" alt="しょうけい館チャンネル" width="271" height="43" class="bannar" /></a></li>
+                <li></li>
+                <li></li>
+			  </ul>        
+		  <ul class="label">
+			<l><img src="img/download_01.gif" width="271" height="26" alt="ダウンロード" /></li>
+            <li class="bannar"><a href="pdf/2017_schedule.pdf" target="_blank"><img src="img/down_bt07.gif" width="170" height="15" alt="年間スケジュール" /></a></li>
+            <li class="bannar"><a href="study/pdf/dantaiyoyaku.pdf" target="_blank"><img id="raikandantaiyoyaku" src="img/down_bt05.gif" width="150" height="15" alt="団体予約" /></a></li>
+            <li class="bannar"><a href="sub_menu/kashidashi.html" target="_blank"><img src="img/down_bt06.gif" width="170" height="15" alt="貸出キット" /></a></li>
+            <li class="bannar"><a href="pdf/SHOKEI-KAN-map.pdf" target="_blank"><img src="img/down_bt01.gif" width="101" height="15" alt="交通のご案内" /></a></li>
+		    <li class="bannar"><a href="pdf/raodmap.pdf" target="_blank"><img src="img/down_bt02.gif" width="255" height="15" alt="道順" /></a></li>            
+            <li class="bannar"><a href="pdf/Pamphlet_English_new.pdf" target="_blank"><img src="img/down_bt03.gif" width="242" height="16" alt="Shokei-kan Pamphiets" /></a>             
+              <a href="http://www.showakan.go.jp/" target="_blank"><img src="img/bnr_syowa.gif" alt="昭和館" width="227" height="70" class="bannar" /></a>
+              <a href="http://www.heiwakinen.jp/" target="_blank"><img src="img/bnr_heiwakinen.gif" alt="平和祈念展示資料館" width="227" height="70" class="bannar" /></a>
+              <a href="sub_menu/link.html" style="display:block; margin-top:30px;"><img src="img/bnr_link.gif" alt="リンク集" width="227" height="70" class="bannar" /></a>
+            </li>
+		    </ul>
+	     </div>
+  </div>
+<div id="top_inpage">
+          <div class="title">
+            <table width="563" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td>      <!-- CSS -->
+      <style type="text/css">
+         #slideshow { position:relative; width:563px; height:266px; }
+         #slideshow img { position:absolute; top:0; left:0; z-index:8; }
+         #slideshow img.active { z-index:10; }
+         #slideshow img.last-active { z-index:9; }
+      </style>
+   </head>
+   
+      <div id="wrap">
+        <div id="slideshow">
+    <div id="slideshow">
+             <img src="img/top_001.jpg" alt=""  class="active" />
+             <img src="img/top_002.jpg" alt="" />
+             <img src="img/top_005.jpg" alt="" />
+             <img src="img/top_004.jpg" alt="" />          
+        </div>       
+        </div>
+        </div>
+        </td>
+              </tr>
+              <tr>
+                <td><img src="img/top_copy.gif" alt="" width="563" height="95" /></td>
+              </tr>
+            </table>
+    </div>
+  </div>
+<div id="oshirase">
+          <div><img src="img/syokei_oshirase.gif" width="563" height="32" alt="しょうけい館からのお知らせ" /></div>
+          <table width="563" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><iframe width="563" height="300" frameborder="0" scrolling="no" marginwidth="0" marginheight="0" src="sub_menu/oshirase.html"></iframe></td>
+  </tr>
+</table>
+</div>
+  <div id="koshin">
+<img src="img/syokei_rireki.gif" width="563" height="32" alt="新着情報" />          <table width="563" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><iframe width="563" height="260" frameborder="0" scrolling="auto" marginwidth="0" marginheight="0" src="sub_menu/news.html"></iframe></td>
+  </tr>
+</table></div>
+        <!-- #footer　フッタースペース -->
+<div id="underNavi">
+<div id="footer">
+<li>
+  <table width="900" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="580" height="19"><img src="img/copyright.gif" width="580" height="13" alt="copyright" /></td>
+      <td width="320" valign="top"><div align="right"><span class="s">アクセスカウンター（2006年3月21日設置）</span></div></td>
+    </tr>
+    <tr>
+      <td height="19"><div align="left"><span class="s">当ページに掲載の文章・写真の無断転載を禁じます。</span></div></td>
+      <td valign="top"><div align="right"><img src="counter/tc.cgi?shokeim&ah&1&imgcm&6" width="90" height="20" alt="カウンター" /></div></td>
+    </tr>
+  </table>
+</li>
+<div align="left"></div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9462069-5");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>
